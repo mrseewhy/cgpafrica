@@ -17,9 +17,9 @@ const ServicesSection = () => {
     },
     {
       icon: <Key className="w-12 h-12 text-yellow-600" />,
-      title: "Rent to Buy",
-      description: "Flexible payment plans making home ownership more accessible.",
-      image: "/images/Services_3.jpg"
+      title: "Shortlet",
+      description: "Making your dream getaway more affordable and convenient.",
+      image: "/images/shortlet.jpeg"
     },
     {
       icon: <Construction className="w-12 h-12 text-yellow-600" />,

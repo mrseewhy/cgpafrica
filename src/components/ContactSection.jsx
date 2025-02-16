@@ -28,7 +28,7 @@ const ContactSection = () => {
     },
     {
       title: "Address",
-      value: "Plot 5&6 Hazeez Aderomola Street odomo Estate Ile-Ife",
+      value: "Plot V-148, Maiyegun Beach Estate, Lekki, Lagos State",
       icon: <MapPin className="w-6 h-6" />,
     },
   ];

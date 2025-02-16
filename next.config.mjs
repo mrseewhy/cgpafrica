@@ -4,10 +4,10 @@ const nextConfig = {async headers() {
       {
         source: "/(.*)", // Match all routes
         headers: [
-          {
-            key: "Content-Security-Policy",
-            value: "default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
-          },
+          // {
+          //   key: "Content-Security-Policy",
+          //   value: "default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
+          // },
           {
             key: "Strict-Transport-Security",
             value: "max-age=31536000; includeSubDomains; preload",

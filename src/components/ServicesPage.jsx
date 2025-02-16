@@ -1,5 +1,8 @@
 // components/ServicesPage.js
 
+// import { Link } from "lucide-react";
+import Link from 'next/link';
+
 const ServicesPage = () => {
     const services = [
       {
@@ -15,10 +18,11 @@ const ServicesPage = () => {
         image: "/images/Services_2.jpg",
       },
       {
-        headline: "Rent to Buy",
+        headline: "Shortlet",
         description:
-          "Experience the flexibility of our Rent to Buy service, a unique opportunity to transition from renting to owning seamlessly. At Capricorn Global Properties, we understand that the path to homeownership can take different routes. Our Rent to Buy program allows you to live in your dream home while building towards ownership. Enjoy the benefits of a temporary lease with the option to purchase, providing you with the time and convenience to make the right decision for your future. Take the first step towards homeownership with Capricorn – where renting becomes a pathway to owning.",
-        image: "/images/Services_3.jpg",
+          "Discover the convenience and comfort of shortlet living with our tailored service designed to meet your needs. Whether you're traveling for business, relocating, or simply seeking a temporary home, our shortlet offerings provide fully furnished, stylish spaces equipped with all the essentials for a seamless stay. Enjoy the flexibility of short-term leases, personalized amenities, and prime locations, all at competitive rates. Perfect for those who value comfort, privacy, and hassle-free living, our shortlet service ensures a home-away-from-home experience that adapts to your lifestyle. We offer premium shortets in Africa’s richest square mile, Sandton",
+        image: "/images/shortlet.jpeg",
+        link: "/properties#shortlet"
       },
       {
         headline: "Building Construction",
@@ -52,7 +56,8 @@ const ServicesPage = () => {
                 <h3 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4 font-sans">
                   {service.headline}
                 </h3>
-                <p className="text-base md:text-lg leading-relaxed font-poppins">{service.description}</p>
+                <p className="text-base md:text-lg leading-relaxed font-poppins mb-4">{service.description}</p>
+                {service.link && (<Link href={service.link} className="bg-yellow-600 text-white font-medium px-6 py-2 rounded-lg border border-yellow-200"> view </Link>)}
               </div>
             </div>
           ))}
